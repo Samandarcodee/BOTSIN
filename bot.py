@@ -2,6 +2,10 @@ import os
 import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from dotenv import load_dotenv
+
+# .env faylini yuklash (agar mavjud bo'lsa)
+load_dotenv()
 
 # Logging sozlamalari
 logging.basicConfig(
